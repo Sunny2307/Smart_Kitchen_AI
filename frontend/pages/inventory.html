@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Inventory Tracking</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="../css/inventory.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+     <!-- Header will be dynamically inserted here -->
+     <div id="header-placeholder"></div>
+    <div class="container">
+        <h1>AI Inventory Tracking</h1>
+        <p class="subtitle">Monitor your kitchen inventory in real-time with AI-powered insights.</p>
+
+        <!-- Image Upload Section -->
+        <div class="image-upload-section">
+            <h2><i class="fas fa-image icon-inline"></i> Upload Shelf Image</h2>
+            <div class="upload-area">
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                <label for="imageUpload" class="upload-label">
+                    <i class="fas fa-upload placeholder-icon"></i>
+                    <p>Click to upload an image of your kitchen shelf</p>
+                    <p class="upload-subtext">Supported formats: JPG, PNG</p>
+                </label>
+                <div id="preview" class="image-preview">
+                    <!-- Preview will be populated via JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Stock & Expiry Tracking Section -->
+        <div class="stock-tracking-section">
+            <h2><i class="fas fa-boxes icon-inline"></i> Available Stock & Expiry Tracking</h2>
+            <div class="stock-grid">
+                <div class="stock-card">
+                    <h3>Tomatoes</h3>
+                    <p><strong>Quantity:</strong> 15 kg</p>
+                    <p><strong>Expiry:</strong> 2025-04-05 <span class="warning"><i class="fas fa-exclamation-triangle"></i> Expiring Soon</span></p>
+                </div>
+                <div class="stock-card">
+                    <h3>Flour</h3>
+                    <p><strong>Quantity:</strong> 50 kg</p>
+                    <p><strong>Expiry:</strong> 2025-06-20</p>
+                </div>
+                <div class="stock-card">
+                    <h3>Chicken</h3>
+                    <p><strong>Quantity:</strong> 10 kg</p>
+                    <p><strong>Expiry:</strong> 2025-04-02 <span class="urgent"><i class="fas fa-exclamation-circle"></i> Urgent</span></p>
+                </div>
+                <div class="stock-card">
+                    <h3>Olive Oil</h3>
+                    <p><strong>Quantity:</strong> 5 liters</p>
+                    <p><strong>Expiry:</strong> 2025-08-15</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auto-Suggestion Section -->
+        <div class="suggestion-section">
+            <h2><i class="fas fa-lightbulb icon-inline"></i> Stock Replenishment Suggestions</h2>
+            <div class="suggestion-grid">
+                <div class="suggestion-card">
+                    <h3>Tomatoes</h3>
+                    <p>Based on past sales trends, order <strong>20 kg</strong> to meet demand for the next week.</p>
+                </div>
+                <div class="suggestion-card">
+                    <h3>Chicken</h3>
+                    <p>Based on past sales trends, order <strong>15 kg</strong> to avoid shortages.</p>
+                </div>
+                <div class="suggestion-card">
+                    <h3>Olive Oil</h3>
+                    <p>Stock is low. Order <strong>10 liters</strong> to maintain inventory levels.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Basic JavaScript for Image Preview -->
+    <script>
+        const uploadInput = document.getElementById('imageUpload');
+        const preview = document.getElementById('preview');
+
+        uploadInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.innerHTML = `<img src="${e.target.result}" alt="Uploaded Shelf Image" style="max-width: 100%; border-radius: 10px;">`;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <!-- Footer will be dynamically inserted here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

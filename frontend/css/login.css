@@ -1,0 +1,133 @@
+/* Login Section */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 160px); /* Full height minus header and footer */
+    padding: 50px;
+    text-align: center;
+}
+
+.login h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.login .subheading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    background-color: #0f1a2f;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #007bff;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a2a44;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.form-group input::placeholder {
+    color: #ccc;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
+}
+
+.forgot-password {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #00d4b5;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.sign-in {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in:hover {
+    background-color: #0056b3;
+}
+
+.demo-credentials {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+.signup-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #00d4b5;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

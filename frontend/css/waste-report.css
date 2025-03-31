@@ -1,0 +1,292 @@
+/* waste-report.css */
+
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a2a44; /* Dark background color */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #2a3b5a;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter label {
+    font-size: 0.9rem;
+    color: #b0b8d1;
+}
+
+.filter select {
+    padding: 5px;
+    background-color: #2a3b5a;
+    color: #ffffff;
+    border: 1px solid #4a90e2;
+    border-radius: 5px;
+}
+
+.refresh-btn, .scan-btn {
+    padding: 8px 15px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.refresh-btn:hover, .scan-btn:hover {
+    background-color: #357abd;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Waste Breakdown Section */
+.waste-breakdown-section {
+    flex: 1;
+    background-color: #2a3b5a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.waste-breakdown-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.waste-breakdown-section .subtitle {
+    font-size: 0.8rem;
+    color: #b0b8d1;
+    margin-bottom: 15px;
+}
+
+.breakdown-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.breakdown-card {
+    text-align: left;
+}
+
+.breakdown-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #b0b8d1;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #3498db; /* Default color, overridden inline */
+    width: 100%;
+}
+
+.progress.overall {
+    background: linear-gradient(to right, #3498db 50%, #2ecc71 50%);
+}
+
+.progress-bar span {
+    font-size: 0.8rem;
+    color: #b0b8d1;
+    min-width: 60px;
+}
+
+/* Right Column: Financial Impact and Trends */
+.right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.financial-impact-section, .waste-trends-section {
+    background-color: #2a3b5a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.financial-impact-section h2, .waste-trends-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.financial-impact-section .subtitle, .waste-trends-section .subtitle {
+    font-size: 0.8rem;
+    color: #b0b8d1;
+    margin-bottom: 15px;
+}
+
+.impact-placeholder, .trends-placeholder {
+    background-color: #1a2a44;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    color: #b0b8d1;
+    height: 200px; /* Fixed height to match image proportions */
+}
+
+.impact-placeholder .placeholder-icon, .trends-placeholder .placeholder-icon {
+    font-size: 40px;
+    color: #4a90e2;
+    margin-top: 10px;
+}
+
+/* Recommendations Section */
+.recommendations-section {
+    margin-bottom: 20px;
+}
+
+.recommendations-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.recommendation-card {
+    background-color: #2a3b5a;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.recommendation-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.recommendation-card h3 i {
+    font-size: 1.2rem;
+}
+
+.recommendation-card p {
+    font-size: 0.9rem;
+    color: #b0b8d1;
+    margin-bottom: 15px;
+}
+
+.high-priority {
+    border: 2px solid #e74c3c;
+}
+
+.medium-priority {
+    border: 2px solid #f1c40f;
+}
+
+.low-priority {
+    border: 2px solid #2ecc71;
+}
+
+.high-priority h3 i {
+    color: #e74c3c;
+}
+
+.medium-priority h3 i {
+    color: #f1c40f;
+}
+
+.low-priority h3 i {
+    color: #2ecc71;
+}
+
+.action-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.action-btn.high {
+    background-color: #e74c3c;
+}
+
+.action-btn.medium {
+    background-color: #f1c40f;
+}
+
+.action-btn.low {
+    background-color: #2ecc71;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .waste-breakdown-section, .right-column {
+        width: 100%;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filter {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+}

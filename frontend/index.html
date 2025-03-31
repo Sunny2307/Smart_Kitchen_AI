@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Kitchen</title>
+    <link rel="stylesheet" href="css/common.css"> <!-- Common styles for header and footer -->
+    <link rel="stylesheet" href="css/index.css"> <!-- Styles specific to index.html -->
+    <!-- Import Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Include model-viewer library -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Header manually inserted -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Smart Kitchen Logo">
+            <span>Smart Kitchen</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="pages/login.html" class="login-btn">Login</a></li>
+                <li><a href="pages/signup.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Smart Kitchen <span>AI</span></h1>
+                <p>Revolutionize your restaurant operations with our AI-powered kitchen management and waste minimization system. Reduce costs, optimize inventory, and create sustainable menus with intelligent insights.</p>
+                <div class="buttons">
+                    <a href="pages/signup.html" class="btn get-started">Get Started <span>→</span></a>
+                </div>
+            </div>
+            <!-- 3D model viewer -->
+            <div class="model-container">
+                <model-viewer
+                    src="assets/models/plate_on_table.glb"
+                    alt="A 3D model of a plate of food on a table"
+                    auto-rotate
+                    auto-rotate-delay="0" 
+                    rotation-per-second="30deg" 
+                    style="width: 600px; height: 600px;" 
+                    poster="assets/images/placeholder.jpg" 
+                ></model-viewer>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <p class="subheading">Discover how Smart Kitchen AI is transforming restaurant operations worldwide.</p>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>Smart Kitchen AI has completely transformed how we manage our inventory. We’ve reduced our food waste by 35% and increased our profit margins substantially!</p>
+                    <div class="customer">
+                        <div class="initial">M</div>
+                        <div class="customer-info">
+                            <h4>Michael Rodriguez</h4>
+                            <p>Executive Chef, Bistro Moderne</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>The menu optimization feature is a game-changer. We’re now creating innovative dishes based on ingredients that would have gone to waste. Our customers love the creative options!</p>
+                    <div class="customer">
+                        <div class="initial">S</div>
+                        <div class="customer-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Restaurant Owner, Harvest Table</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>The real-time analytics have given us unprecedented visibility into our kitchen operations. Decision-making is so much easier with data-backed insights.</p>
+                    <div class="customer">
+                        <div class="initial">D</div>
+                        <div class="customer-info">
+                            <h4>David Chen</h4>
+                            <p>Operations Manager, Pacific Fusion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer manually inserted -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Smart Kitchen</h4>
+                <p>AI-powered platform for restaurant inventory and waste minimization.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Features</h4>
+                <ul>
+                    <li><a href="#">Inventory Tracking</a></li>
+                    <li><a href="#">Waste Analysis</a></li>
+                    <li><a href="#">Menu Optimization</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Get in Touch</h4>
+                <p>Email: <a href="mailto:support@smartkitchen.com">support@smartkitchen.com</a></p>
+                <p>Phone: <a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Smart Kitchen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

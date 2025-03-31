@@ -1,0 +1,151 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Full height minus header */
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.hero-content {
+    text-align: center; /* Center the text */
+    flex: 1; /* Allow the content to take up available space */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #00d4b5;
+}
+
+.hero-content p {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Center the button */
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.get-started {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.get-started:hover {
+    background-color: #0056b3;
+}
+
+/* 3D Model Container */
+.model-container {
+    flex: 1; /* Allow the model to take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+model-viewer {
+    background: transparent; /* Ensure the background is transparent */
+    width: 600px; /* Increased size */
+    height: 600px; /* Increased size */
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonials .subheading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #0f1a2f;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #007bff;
+    flex: 1;
+    text-align: left;
+}
+
+.testimonial-card .stars {
+    color: #ffd700; /* Gold color for stars */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.testimonial-card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.customer .initial {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.customer-info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.customer-info p {
+    font-size: 0.9rem;
+    color: #ccc;
+}

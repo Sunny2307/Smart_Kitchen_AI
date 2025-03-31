@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Waste Analysis</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="../css/waste-report.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+     <!-- Header will be dynamically inserted here -->
+     <div id="header-placeholder"></div>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="filter">
+                <label for="timePeriod">Waste Period:</label>
+                <select id="timePeriod">
+                    <option value="this-week">This Week</option>
+                    <option value="this-month">This Month</option>
+                    <option value="this-year">This Year</option>
+                </select>
+                <button class="refresh-btn"><i class="fas fa-sync-alt"></i> Refresh</button>
+                <button class="scan-btn"><i class="fas fa-camera"></i> Scan Waste</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Column: Waste Reduction Progress -->
+            <div class="waste-breakdown-section">
+                <h2>Waste Reduction Progress</h2>
+                <p class="subtitle">Year-to-date waste reduction performance</p>
+                <div class="breakdown-grid">
+                    <div class="breakdown-card">
+                        <h3>Overall Goal</h3>
+                        <div class="progress-bar">
+                            <div class="progress overall" style="width: 75%;"></div>
+                            <span>75% Complete</span>
+                        </div>
+                    </div>
+                    <div class="breakdown-card">
+                        <h3>Vegetables</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 31%; background-color: #e74c3c;"></div>
+                            <span>31%</span>
+                        </div>
+                    </div>
+                    <div class="breakdown-card">
+                        <h3>Meat</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 24%; background-color: #f1c40f;"></div>
+                            <span>24%</span>
+                        </div>
+                    </div>
+                    <div class="breakdown-card">
+                        <h3>Dairy</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 19%; background-color: #3498db;"></div>
+                            <span>19%</span>
+                        </div>
+                    </div>
+                    <div class="breakdown-card">
+                        <h3>Grains</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 15%; background-color: #2ecc71;"></div>
+                            <span>15%</span>
+                        </div>
+                    </div>
+                    <div class="breakdown-card">
+                        <h3>Fruits</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 11%; background-color: #9b59b6;"></div>
+                            <span>11%</span>
+                        </div>
+                    </div>
+                    <div class="breakdown-card">
+                        <h3>Other</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%; background-color: #e67e22;"></div>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Financial Impact and Trends -->
+            <div class="right-column">
+                <div class="financial-impact-section">
+                    <h2>Financial Impact</h2>
+                    <p class="subtitle">Cost analysis of food waste over time.</p>
+                    <div class="impact-placeholder">
+                        <p>Area chart showing financial loss trends (integration placeholder)</p>
+                        <i class="fas fa-chart-area placeholder-icon"></i>
+                    </div>
+                </div>
+                <div class="waste-trends-section">
+                    <h2>Monthly Waste Trends</h2>
+                    <p class="subtitle">Tracking waste amounts over the year.</p>
+                    <div class="trends-placeholder">
+                        <p>Line chart showing actual waste vs. target (integration placeholder)</p>
+                        <i class="fas fa-chart-line placeholder-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="recommendations-section">
+            <h2>Recommended Actions</h2>
+            <div class="recommendation-grid">
+                <div class="recommendation-card high-priority">
+                    <h3><i class="fas fa-exclamation-circle"></i> High Priority</h3>
+                    <p>Reduce weekend prep amounts by 20% to address Saturday waste spike.</p>
+                    <button class="action-btn high">Take Action</button>
+                </div>
+                <div class="recommendation-card medium-priority">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Medium Priority</h3>
+                    <p>Optimize portion sizes for Chicken Parmesan to reduce waste.</p>
+                    <button class="action-btn medium">Take Action</button>
+                </div>
+                <div class="recommendation-card low-priority">
+                    <h3><i class="fas fa-check-circle"></i> Low Priority</h3>
+                    <p>Increase consumption to reduce waste in Fruits category.</p>
+                    <button class="action-btn low">Take Action</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer will be dynamically inserted here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

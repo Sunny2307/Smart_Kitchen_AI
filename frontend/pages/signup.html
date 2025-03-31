@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Smart Kitchen</title>
+    <link rel="stylesheet" href="../css/common.css"> <!-- Common styles for header and footer -->
+    <link rel="stylesheet" href="../css/signup.css"> <!-- Styles specific to signup.html -->
+    <!-- Import Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be dynamically inserted here -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="signup">
+            <h2>Create an Account</h2>
+            <p class="subheading">Enter your details to create your Smart Kitchen account</p>
+            <form class="signup-form">
+                <div class="role-toggle">
+                    <button type="button" class="role-btn active" data-role="restaurant-owner">Restaurant Owner</button>
+                    <button type="button" class="role-btn" data-role="kitchen-staff">Kitchen Staff</button>
+                </div>
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your-email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <span class="toggle-password">👁️</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+                        <span class="toggle-password">👁️</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn create-account">Create Account</button>
+            </form>
+            <p class="signin-link">Already have an account? <a href="login.html">Sign In</a></p>
+        </section>
+    </main>
+
+    <!-- Footer will be dynamically inserted here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

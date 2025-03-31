@@ -1,0 +1,77 @@
+/* features.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a2a44; /* Dark background color */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #b0b8d1; /* Lighter color for subtitle */
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #2a3b5a; /* Slightly lighter than the background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Keeps text color consistent */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Adds shadow on hover */
+    cursor: pointer; /* Shows it's clickable */
+}
+
+.icon {
+    font-size: 40px; /* Size of the Font Awesome icons */
+    color: #4a90e2; /* Blue color to match the design */
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #b0b8d1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .features-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
